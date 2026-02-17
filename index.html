@@ -6,7 +6,7 @@
     <title>Rajeswari Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<>
     <header>
     <nav>
         <a href="#home">Home</a>
@@ -27,7 +27,6 @@
         <h2>About me</h2>
         <p>I am currently pursuing CSE and interested in web development</p>
     </section>
-
     <h2>Education</h2>
     <p><strong>B.Tech Computer Science Engineering</strong></p>
     <p>Achariya College Of Engineering Technology</p>
@@ -73,5 +72,31 @@
         <input type="tel" id="mobile" name="mobile"><br>
         </form>
     </section>
+    <button onclick="changecolor()">Click Me</button> 
+    <p id="cnt" style="background-color:yellow;color:black"></p>
+    <button onclick="decrease()">-</button> <br>
+    <button onclick="increase()">+</button>
+    <footer>
+        <p>&copy:2025 RAJESWARI.All rights reserved . </p>
+    </footer>
+    <script>
+        document.getElementsByTagName("h1").innerHTML("Rajeswari");
+        document.getElementsByTagName("h1")[0].style.innerHTML("Rajeswari");
+        document.getElementById("demo").innerHTML="I am a passionate Frontend Developer and Computer Science student. ";
+        document.getElementById("demo").style.backgroundColor="lightblue";
+        function changecolor(){
+            document.body.style.backgroundcolor="red";
+        }
+        let count=0;
+        function increase(){
+            count++;
+            document.getElementById("count").innerHTML=count;
+        }
+        function decrease(){
+            count--;
+            document.getElementById("COUNT").innerHTML=count;
+        }        
+    </script>
+
 </body>
 </html>
